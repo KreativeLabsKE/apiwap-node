@@ -6,6 +6,9 @@
   "module": "../dist/index.mjs",
   "types": "../dist/index.d.ts",
   "homepage": "https://apiwap.com",
+  "repository": {
+    "url": "https://github.com/KreativeLabsKE/apiwap-node"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"tsup",
