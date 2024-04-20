@@ -24,9 +24,8 @@ class Apiwap {
               })
 
               return response
-         } catch (error) {
-            let message = 'sending text message failed'
-            if (error instanceof Error) message = error.message
+         } catch (error:any) {
+            let message = error.response.data
             throw new Error(message)
          }
     }
