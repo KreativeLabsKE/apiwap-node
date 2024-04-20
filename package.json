@@ -2,9 +2,9 @@
   "name": "apiwap-node",
   "version": "1.0.1",
   "description": "",
-  "main": "../dist/index.js",
-  "module": "../dist/index.mjs",
-  "types": "../dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "homepage": "https://apiwap.com",
   "repository": {
     "url": "https://github.com/KreativeLabsKE/apiwap-node"
@@ -12,8 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"tsup",
-    "dev": "nodemon src/index.ts",
-    "start": "node dist/index.js"
+    "dev": "nodemon src/index.ts"
   },
   "keywords": ["whatsapp api", "apiwap", "apiwap api"],
   "author": "kreativelabske",
