@@ -11,14 +11,19 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"tsup",
+    "build": "tsup",
     "dev": "nodemon src/index.ts"
   },
-  "keywords": ["whatsapp api", "apiwap", "apiwap api"],
+  "keywords": [
+    "whatsapp api",
+    "apiwap",
+    "apiwap api"
+  ],
   "author": "kreativelabske",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
