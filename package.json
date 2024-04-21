@@ -20,11 +20,16 @@
     "package:beta": "npm run build && npm publish --tag beta",
     "package": "npm run build && npm publish --access=public"
   },
-  "keywords": ["whatsapp api", "apiwap", "apiwap api"],
+  "keywords": [
+    "whatsapp api",
+    "apiwap",
+    "apiwap api"
+  ],
   "author": "kreativelabske",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
