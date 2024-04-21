@@ -1,18 +1,24 @@
 {
   "name": "apiwap-node",
   "version": "1.0.5",
-  "description": "",
+  "description": "apiwap-node is a Node.js package that provides a simple and easy-to-use interface for sending WhatsApp messages using the [APIWAP](https://apiwap.com) service.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "homepage": "https://apiwap.com",
   "repository": {
+    "type": "git",
     "url": "https://github.com/KreativeLabsKE/apiwap-node"
   },
+  "bugs": {
+    "url": "https://github.com/KreativeLabsKE/apiwap-node/issues"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup",
-    "dev": "nodemon src/index.ts"
+    "build":"tsup",
+    "dev": "nodemon src/index.ts",
+    "generate:release": "npx changelogen@latest --release",
+    "package:beta": "npm run build && npm publish --tag beta",
+    "package": "npm run build && npm publish --access=public"
   },
   "keywords": [
     "whatsapp api",
