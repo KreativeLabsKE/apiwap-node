@@ -50,5 +50,5 @@ class Apiwap {
    }
 }
 
-// export * from "./types"
+export * from "./types"
 export default Apiwap
